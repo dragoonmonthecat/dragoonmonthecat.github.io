@@ -78,6 +78,7 @@ body {
     text-align: center;
     row-gap: 40px;
     color: white;
+    align-items: center;
 }
 
 .content-container section h1 {
@@ -128,12 +129,118 @@ body {
 }
 
 .projects {
+    height: 400px !important;
     background-color: #576a8c;
+}
+
+.project-card {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-img {
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.project-text, .right-arrow {
+    align-self: center;
+}
+
+.project-heading, .project-technologies {
+    display: block;
+}
+
+.project-technologies {
+    font-size: 10px;
+    color: grey;
+}
+
+.right-arrow {
+    font-size: 18px;
+    margin-right: 5px;
+    border-left: 1px solid lightgrey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right-arrow i {
+    margin-left: 5px;
 }
 
 .skills {
     background-color: #687fa8;
 }
+
+.skills-bar-container {
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.skills-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.skill-heading {
+    width: 25%;
+}
+
+.skill-heading .html-css-js, .skill-heading .express-axios {
+    font-size: 8px;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 75%;
+}
+
+.bar-empty {
+    background-color: lightgrey;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.bar-full {
+    height: 8px;
+    border-radius: 10px;
+    background-color: lightpink;
+}
+
+.html-css-js-bar {
+    width: 80%;
+}
+
+.angular-bar {
+    width: 60%;
+}
+
+.react-bar {
+    width: 35%;
+}
+
+.express-axios-bar {
+    width: 20%;
+}
+
+.mysql-bar {
+    width: 25%;
+}
+
 
 .contact {
     height: 100px !important;
