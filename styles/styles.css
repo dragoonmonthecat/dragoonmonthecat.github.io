@@ -35,31 +35,40 @@ body {
     column-gap: 30px;
 }
 
-/* .portfolio-container {
-    display: flex;
-    height: 100%;
-}
-
-.navbar {
-    width: 40px;
-    font-size: 24px;
-    background-color: #2a2b36;
-    padding: 10px;
-    height: 100%;
-}
-
-.icons {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    align-items: center;
-    position: sticky;
-    top: 0;
-} */
-
 .home-icon, .about-icon, .projects-icon, .skills-icon, .contact-icon {
     font-size: 20px;
     color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.home-icon:hover {
+    color: greenyellow;
+    transform: scale(1.15,1.15);
+    cursor: pointer;
+}
+
+.about-icon:hover {
+    color: aquamarine;
+    transform: scale(1.15,1.15);
+    cursor: pointer;
+}
+
+.projects-icon:hover {
+    color: lightcoral;
+    transform: scale(1.15,1.15);
+    cursor: pointer;
+}
+
+.skills-icon:hover {
+    color: lightsalmon;
+    transform: scale(1.15,1.15);
+    cursor: pointer;
+}
+
+.contact-icon:hover {
+    color: lightseagreen;
+    transform: scale(1.15,1.15);
+    cursor: pointer;
 }
 
 .content-container {
@@ -109,16 +118,36 @@ body {
     font-size: 10px !important;
 }
 
-/* .content-container {
-    flex: 1;
+.fa-linkedin, .fa-github {
+    border: 10px solid transparent;
+    margin: -10px;
+    transition: 0.5s ease-in-out;
 }
 
-.content-container section {
-    width: 100%;
-    height: 300px;
-    padding: 50px;
-    text-align: center;
-} */
+.fa-linkedin:hover {
+    color: #0072b1;
+}
+
+.fa-github:hover {
+    color: black;
+}
+
+.fa-linkedin:hover, .fa-github:hover {
+    animation: social 0.5s ease-in;
+    cursor: pointer;
+}
+
+@keyframes social {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(-15px) rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .introduction {
     background-color: #364359;
@@ -140,9 +169,15 @@ body {
     color: black;
     border-radius: 8px;
     margin: 10px;
-
     display: flex;
     justify-content: space-between;
+    transition: 0.5s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translate(-2px,-2px);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
 }
 
 .project-img {
