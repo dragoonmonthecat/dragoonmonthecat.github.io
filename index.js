@@ -5,7 +5,7 @@ const projectsBtn = document.querySelector('.projects-icon');
 const skillsBtn = document.querySelector('.skills-icon');
 const contactBtn = document.querySelector('.contact-icon');
 
-// page sections
+// Page sections
 const intro = document.querySelector('.introduction');
 const about = document.querySelector('.about');
 const projects = document.querySelector('.projects');
