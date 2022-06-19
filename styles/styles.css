@@ -206,20 +206,28 @@ a {
 
 .right-arrow {
     font-size: 18px;
-    margin-right: 5px;
     border-left: 1px solid lightgrey;
     height: 100%;
     display: flex;
     align-items: center;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: 0.3s ease-in;
 }
 
 .right-arrow i {
     margin-left: 5px;
+    margin-right: 5px;
 }
 
 .down-arrow {
     display: none;
     visibility: hidden;
+    transition: 0.3s ease-in;
+}
+
+.down-arrow:hover, .right-arrow:hover {
+    background-color: #2a2b36;
 }
 
 .skills {
@@ -383,6 +391,12 @@ a {
         visibility: visible;
         font-size: 18px;
         border-top: 1px solid lightgrey;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+
+    .fa-angle-down {
         margin-bottom: 3px;
     }
 
